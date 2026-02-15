@@ -1,2 +1,2 @@
 # ai_resume
-ai
+ai简历生成
