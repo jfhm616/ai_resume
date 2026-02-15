@@ -1,5 +1,5 @@
-const API_KEY = '8e5808e4abf5498da7634e71d4c182bf.MUZDQorINNMASvMv';
-const API_URL = 'https://open.bigmodel.cn/api/paas/v4/chat/completions';
+const API_KEY = '2275fa49-fbd7-4f07-9481-2e614128b192';
+const API_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions';
 
 export interface ParsedResume {
   basicInfo?: {
@@ -69,7 +69,7 @@ export async function parseResumeWithAI(text: string): Promise<ParsedResume> {
         'Authorization': `Bearer ${API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'glm-4-flash',
+        model: 'deepseek-r1-250528',
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userContent },
